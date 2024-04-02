@@ -1,15 +1,13 @@
-function Header () {
+import { Link } from 'react-router-dom';
+
+const Header = () => {
   return (
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <nav>
+      <Link to="/">Avaleht</Link>
+      <Link to="/blog">Blogi</Link>
+      {/* Lisa siia teisi linke */}
+    </nav>
   );
-}
+};
 
 export default Header;
