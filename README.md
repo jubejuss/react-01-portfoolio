@@ -37,4 +37,5 @@ const Header = () => {
 };
 ```
 - Github pages'i seadisatmine: https://vitejs.dev/guide/static-deploy
+- Install Stylex: `npm install --save @stylexjs/stylex` Install Vite stylex: npm install --save-dev vite-plugin-stylex setup: https://blog.logrocket.com/exploring-stylex-new-generation-styling-libraries/
 - 
