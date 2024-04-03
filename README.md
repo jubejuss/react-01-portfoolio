@@ -8,7 +8,6 @@
 - Routeri seadistamine:  
 ```javascript
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// ... [importi teised vajalikud komponendid]
 
 function App() {
   return (
@@ -17,7 +16,6 @@ function App() {
       <Routes> {/* Wrapi Route komponendid Routes komponendiga */}
         <Route path="/" element={<HomePage />} />
         <Route path="/blog" element={<BlogPage />} />
-        {/* Defineeri siin teised marsruudid */}
       </Routes>
       <Footer />
     </Router>
@@ -38,3 +36,5 @@ const Header = () => {
   );
 };
 ```
+- Github pages'i seadisatmine: https://vitejs.dev/guide/static-deploy
+- 

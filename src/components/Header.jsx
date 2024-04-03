@@ -2,11 +2,14 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <nav>
-      <Link to="/">Avaleht</Link>
-      <Link to="/blog">Blogi</Link>
-      {/* Lisa siia teisi linke */}
-    </nav>
+    <header>
+        <nav>
+        <Link to="/">Avaleht</Link>
+        <Link to="/projektid">Projektid</Link>
+        <Link to="/blog">Blogi</Link>
+        <Link to="/kontakt">Kontakt</Link>
+        </nav>
+    </header>
   );
 };
 
