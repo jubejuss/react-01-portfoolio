@@ -38,5 +38,24 @@ const Header = () => {
 ```
 - Github pages'i seadisatmine: https://vitejs.dev/guide/static-deploy
 - Kasutades github pages'it, siis vaja vite.config.js määrata `base: "/react-01-portfoolio"` ja samuti App.jsx'is `<Router basename="/react-01-portfoolio/">` See on antud juhul github pagesi aadress. Teisel juhul muidugi teistsugune.
+- Kui soovida, et `base`sõltuks sellest, kas tegu arenduse või productioniga, määra `vite.config`'is':
+  ```javascript
+  const isProduction = process.env.NODE_ENV === 'production';
+
+    export default defineConfig({
+      plugins: [react(), styleX()],
+      base: isProduction ? '/react-01-portfoolio/' : '/',
+    });
+```
+  ja `App.jsx`'is':
+  ```javascript
+    const basename = process.env.NODE_ENV === 'production' ? '/react-01-portfoolio/' : '/';
+
+    function App() {
+      return (
+        <Router basename={basename}>
+  ```
+  
+  
 - Install Stylex: `npm install --save @stylexjs/stylex` Install Vite stylex: npm install --save-dev vite-plugin-stylex setup: https://blog.logrocket.com/exploring-stylex-new-generation-styling-libraries/
 - 
