@@ -1,9 +1,13 @@
-import Button from '../components/Button';
+import Card from '../components/Card';
 function HomePage () {
     return (
         <div>
             <h1>Home Page</h1>
-            <Button type="primary">Vajuta</Button>
+            <Card 
+                title="Kaardi pealkiri" 
+                description="See on selline tore kaart, et muudkui teed seda ja ongi nii" primaryButtonText="Vaata ise"
+                secondaryButtonText="Ära vaata"
+                />
         </div>
     )
 }
