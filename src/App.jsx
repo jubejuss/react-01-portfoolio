@@ -8,9 +8,12 @@ import ContactPage from './pages/ContactPage';
 import ProjectsPage from './pages/ProjectsPage.jsx';
 // Importi teised lehtede komponendid
 
+// Tingimuslik basename väärtus
+const basename = process.env.NODE_ENV === 'production' ? '/react-01-portfoolio/' : '/';
+
 function App() {
   return (
-    <Router basename="/react-01-portfoolio/"> { /* Browseri aadressiribal kuvatav osa, sõltuvuses vite.confif.js'is määratud base-st. Hetkel vajalik selline, kuna see on see, mis github pagesi aadress */ }
+    <Router basename={basename}> { /* Browseri aadressiribal kuvatav osa, sõltuvuses vite.confif.js'is määratud base-st. Hetkel vajalik selline, kuna see on see, mis github pagesi aadress */ }
       <Header />
       <main>
         <Routes>  
