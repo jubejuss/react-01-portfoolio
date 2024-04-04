@@ -10,7 +10,7 @@ import ProjectsPage from './pages/ProjectsPage.jsx';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/react-01-portfoolio/"> { /* Browseri aadressiribal kuvatav osa, sõltuvuses vite.confif.js'is määratud base-st */ }
       <Header />
       <main>
         <Routes>  
