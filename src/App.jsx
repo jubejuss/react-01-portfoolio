@@ -10,7 +10,7 @@ import ProjectsPage from './pages/ProjectsPage.jsx';
 
 function App() {
   return (
-    <Router basename="/"> { /* Browseri aadressiribal kuvatav osa, sõltuvuses vite.confif.js'is määratud base-st */ }
+    <Router basename="/react-01-portfoolio/"> { /* Browseri aadressiribal kuvatav osa, sõltuvuses vite.confif.js'is määratud base-st. Hetkel vajalik selline, kuna see on see, mis github pagesi aadress */ }
       <Header />
       <main>
         <Routes>  
