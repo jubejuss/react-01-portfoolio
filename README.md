@@ -37,5 +37,6 @@ const Header = () => {
 };
 ```
 - Github pages'i seadisatmine: https://vitejs.dev/guide/static-deploy
+- Kasutades github pages'it, siis vaja vite.config.js määrata `base: "/react-01-portfoolio"` ja samuti App.jsx'is `<Router basename="/react-01-portfoolio/">` See on antud juhul github pagesi aadress. Teisel juhul muidugi teistsugune.
 - Install Stylex: `npm install --save @stylexjs/stylex` Install Vite stylex: npm install --save-dev vite-plugin-stylex setup: https://blog.logrocket.com/exploring-stylex-new-generation-styling-libraries/
 - 
